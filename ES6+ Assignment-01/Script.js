@@ -1,4 +1,4 @@
-//  # ES6+ Practice Question Set 1
+//   ES6+ Practice Question Set 1
 
 //  1. Write a function that takes a user's age and determines if they are old enough to vote (age 18 or older).
 
