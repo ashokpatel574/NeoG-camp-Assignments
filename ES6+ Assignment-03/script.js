@@ -45,8 +45,32 @@ console.log(message2);
 const findPerson = (array, personName) =>
   array.map((arr) => (arr.name === personName ? arr : null));
 
+// Without inBuilt function
+
+const findPerson1 = (array, personName) => {
+  const result = [];
+
+  if (array.length >= 0) {
+    for (let i = 0; i < array.length; i++) {
+      result[i] = array[i].name === personName ? array[i] : null;
+    }
+  }
+
+  return result;
+};
+
 console.log(
   findPerson(
+    [
+      { name: "Amay", age: 25 },
+      { name: "Akhil", age: 25 },
+    ],
+    "Akhil"
+  )
+);
+
+console.log(
+  findPerson1(
     [
       { name: "Amay", age: 25 },
       { name: "Akhil", age: 25 },
@@ -115,7 +139,28 @@ const printLastFive = (arr) =>
     return i < arr.length && i >= arr.length - 5;
   });
 
+// Without inBuilt function
+
+const printLastFive1 = (arr) => {
+  const result = [];
+  let j = 0;
+
+  if (arr.length >= 0) {
+    for (let i = 0; i < arr.length; i++) {
+      if (i >= arr.length - 5) {
+        result[j] = arr[i];
+        j += 1;
+      }
+    }
+  }
+
+  return result;
+};
+
 console.log(printLastFive([0, 1, 1, 2, 3, 5, 8]));
+// [1, 2, 3, 5, 8]
+
+console.log(printLastFive1([0, 1, 1, 2, 3, 5, 8]));
 // [1, 2, 3, 5, 8]
 
 //-----------------------------------------------------------------------------------------------------------------------//
@@ -154,8 +199,27 @@ const sumOfEvenIndices = (arr) =>
     return i % 2 === 0 ? acc + curr : acc;
   }, 0);
 
+// Without inBuilt function code
+
+const sumOfEvenIndices1 = (arr) => {
+  let result = 0;
+
+  if (arr.length >= 0) {
+    for (let i = 0; i < arr.length; i++) {
+      if (i % 2 === 0) {
+        result += arr[i];
+      }
+    }
+  }
+
+  return result;
+};
+
 console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5])); // 6
 console.log(sumOfEvenIndices([12, 14, 3, 27, 15, 25])); // 30
+
+console.log(sumOfEvenIndices1([2, 4, 3, 7, 1, 5])); // 6
+console.log(sumOfEvenIndices1([12, 14, 3, 27, 15, 25])); // 30
 
 //-----------------------------------------------------------------------------------------------------------------------//
 
@@ -168,9 +232,29 @@ const sumFirstTwoElements = (arr) =>
     return i < 2 ? acc + curr : acc;
   }, 0);
 
+// Without inBuilt function code
+
+const sumFirstTwoElements1 = (arr) => {
+  let result = 0;
+
+  if (arr.length >= 0) {
+    for (let i = 0; i < arr.length; i++) {
+      if (i < 2) {
+        result += arr[i];
+      }
+    }
+  }
+
+  return result;
+};
+
 console.log(sumFirstTwoElements([10, 4, 3, 7, 1, 5])); // 14
 
 console.log(sumFirstTwoElements([12, 14, 3, 27, 15])); // 26
+
+console.log(sumFirstTwoElements1([10, 4, 3, 7, 1, 5])); // 14
+
+console.log(sumFirstTwoElements1([12, 14, 3, 27, 15])); // 26
 
 //-----------------------------------------------------------------------------------------------------------------------//
 
@@ -183,8 +267,23 @@ const printMultipleOfFive = (arr) =>
     return a % 5 === 0;
   });
 
+// Without inBuilt function code
+
+const printMultipleOfFive1 = (arr) => {
+  if (arr.length >= 0) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 5 === 0) {
+        return arr[i];
+      }
+    }
+  }
+};
+
 console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3])); // 10
 console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])); // 5
+
+console.log(printMultipleOfFive1([7, 4, 10, 7, 5, 3])); // 10
+console.log(printMultipleOfFive1([7, 5, 10, 7, 15, 3])); // 5
 
 //-----------------------------------------------------------------------------------------------------------------------//
 

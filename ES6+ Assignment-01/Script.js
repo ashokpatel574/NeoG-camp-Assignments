@@ -43,12 +43,32 @@ console.log(isEvenOdd(10)); // Even Number
 
 //  5. Write a function that takes a string as input and determines if it contains the letter 'a' or ‘A’.
 
+// With inBuilt function (Includes())
 const checkForAlphabetA = (str) =>
   str.includes(`a`) ? `Includes a` : `Does not include a`;
+
+// Without Inbuilt function
+
+const checkForAlphabetA2 = (item) => {
+  let result;
+  for (let i = 0; i < item.length; i++) {
+    if (item[i] === "a") {
+      result = `Includes a`;
+      break;
+    } else {
+      result = `Does not includes a`;
+    }
+  }
+  return result;
+};
 
 console.log(checkForAlphabetA("Tanay")); // Includes a
 console.log(checkForAlphabetA("Jeep")); // Does not include a
 console.log(checkForAlphabetA("Jane")); // Includes a
+
+console.log(checkForAlphabetA2("Tanay")); // Includes a
+console.log(checkForAlphabetA2("Jeep")); // Does not include a
+console.log(checkForAlphabetA2("Jane")); // Includes a
 
 //-----------------------------------------------------------------------------------------------------------------------//
 

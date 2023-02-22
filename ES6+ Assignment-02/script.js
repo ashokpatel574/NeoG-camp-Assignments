@@ -159,6 +159,12 @@ console.log(stringToUpperCase("hello")); // "HELLO"
 
 const concatenateStrings = (str1, str2) => str1.concat(str2);
 
+// ES5 code
+
+const concatenateStrings2 = (str1, str2) => str1 + str2;
+
+console.log(concatenateStrings2("hello", "world"));
+
 console.log(concatenateStrings("hello", "world")); // "helloworld"
 
 //-----------------------------------------------------------------------------------------------------------------------//
@@ -169,7 +175,21 @@ console.log(concatenateStrings("hello", "world")); // "helloworld"
 
 const lastElement = (arr) => arr.pop();
 
+// Without inBuilt function / ES5 code
+
+const lastElement1 = (arr) => {
+  let result;
+
+  if (arr.length > 0) {
+    result = arr[arr.length - 1];
+  }
+
+  return result;
+};
+
 console.log(lastElement([1, 2, 3, 4, 5])); // 5
+
+console.log(lastElement1([1, 2, 3, 4, 5])); // 5
 
 //-----------------------------------------------------------------------------------------------------------------------//
 
@@ -179,7 +199,20 @@ console.log(lastElement([1, 2, 3, 4, 5])); // 5
 
 const firstElement = (arr) => arr.shift();
 
+// Without inBuilt function / ES5 code
+
+const firstElement1 = (arr) => {
+  let result;
+
+  if (arr.length >= 0) {
+    result = arr[0];
+  }
+
+  return result;
+};
+
 console.log(firstElement([1, 2, 3, 4, 5])); // 1
+console.log(firstElement1([1, 2, 3, 4, 5])); // 1
 
 //-----------------------------------------------------------------------------------------------------------------------//
 
@@ -189,7 +222,20 @@ console.log(firstElement([1, 2, 3, 4, 5])); // 1
 
 const sumFirstElement = (arr, num) => arr.shift() + num;
 
+// Without inBuilt function / ES5 code
+
+const sumFirstElement1 = (arr, num) => {
+  let result;
+
+  if (arr.length >= 0) {
+    result = arr[0] + num || 0;
+  }
+
+  return result;
+};
+
 console.log(sumFirstElement([1, 2, 3], 5)); // 6
+console.log(sumFirstElement1([1, 2, 3], 5)); // 6
 
 //-----------------------------------------------------------------------------------------------------------------------//
 
@@ -199,7 +245,19 @@ console.log(sumFirstElement([1, 2, 3], 5)); // 6
 
 const sumFirstAndLast = (arr) => arr.shift() + arr.pop();
 
+// Without inBuilt function / ES5 code
+
+const sumFirstAndLast1 = (arr) => {
+  let result;
+  if (arr.length >= 0) {
+    result = arr[0] + arr[arr.length - 1];
+  }
+
+  return result;
+};
+
 console.log(sumFirstAndLast([1, 2, 3, 4, 8])); // 9
+console.log(sumFirstAndLast1([1, 2, 3, 4, 8])); // 9
 
 //-----------------------------------------------------------------------------------------------------------------------//
 
