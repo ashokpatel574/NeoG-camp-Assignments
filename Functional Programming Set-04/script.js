@@ -126,7 +126,9 @@ const products1 = [
 // Your code here
 
 const findMostExpensiveProduct = (arr) => {
-  return arr.reduce((acc, curr) => (curr.price > acc.price ? curr : acc));
+  return arr.reduce((acc, curr) =>
+    curr.price * curr.quantity > acc.price * acc.quantity ? curr : acc
+  );
 };
 console.log(findMostExpensiveProduct(products1));
 // { name: "Slipper", price: 40, quantity: 3 }
