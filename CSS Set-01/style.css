@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.answer-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* first Question */
+
+.first_Question-container {
+  font-family: serif;
+}
+
+.first_Question-container h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.first_Question-container p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Second Question */
+
+.second_Question-container ul {
+  list-style: none;
+}
+
+.second_Question-container li {
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Third Question */
+
+.third_Question-container ul {
+  list-style: none;
+}
+
+.third_Question-container li {
+  font-size: 18px;
+  color: #333;
+  font-weight: 800;
+  padding: 15px;
+  outline: dashed red;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  place-items: center;
+}
+
+/* Fourth Question */
+
+.fourth_Question-container input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.fourth_Question-container .btn_emailSubmit {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+/* Fifth Question */
+
+.fifth_Question-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px;
+  max-width: 23.175rem;
+  width: 100%;
+}
+
+.fifth_Question-container img {
+  width: 350px;
+  height: 150px;
+}
+
+.fifth_Question-container h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px;
+}
+
+.fifth_Question-container p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px;
+}
+
+/* Six Question */
+
+.six_Question-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.six_Question-container img {
+  width: 350px;
+  height: 150px;
+}
+
+.six_Question-container h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px;
+}
+
+.six_Question-container button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Seven Question */
+
+.seven_Question-container input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 0 20px;
+  background-color: #fff;
+  font-size: #999;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
