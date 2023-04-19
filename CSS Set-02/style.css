@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.answer-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* first Question */
+
+.first_Question-container {
+  font-family: serif;
+}
+
+/* Second Question */
+
+.second_Question-container {
+  font-family: serif;
+}
+
+/* Third Question */
+
+.third_Question-container {
+  font-family: serif;
+}
+
+/* Fourth Question */
+
+.fourth_Question-container {
+  font-family: serif;
+}
+
+/* Fifth Question */
+
+.fifth_Question-container {
+  font-family: serif;
+}
